@@ -1,1 +1,17 @@
-
+import random
+#En keksinyt miten tehdä ilman for looppia tai listoja. Testasin jotain size käskyä mutta antoi vaan erroria
+x = random.randint(1, 9)
+print(x)
+y = random.randint(1, 9)
+print(y)
+z = random.randint(1, 9)
+print(z)
+print("------")
+a = random.randint(1, 6)
+print(a)
+b = random.randint(1, 6)
+print(b)
+c = random.randint(1, 6)
+print(c)
+d = random.randint(1, 6)
+print(d)
