@@ -1,0 +1,12 @@
+import time
+print("Hei!! Tervetuloa suorakulmiolaskuriin")
+time.sleep(1)
+x = float(input("Anna kannan pituus: "))
+time.sleep(0.5)
+z = float(input("Anna korkeuden pituus: "))
+print("Annappas kun ajattelen..")
+time.sleep(2)
+y = str((x+x)+(z+z))
+print("Piirin pituus on: " + str(y))
+y = str(x*z)
+print("Pinta-ala on: " + str(y))
