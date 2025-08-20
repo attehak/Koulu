@@ -1,1 +1,9 @@
-
+x = float(input("Eka luku: "))
+y = float(input("Toka luku: "))
+z = float(input("Kolomas luku: "))
+a = (x + y + z)
+print("Kaikkien summa on: " + str(a))
+a = (x * y * z)
+print("Kaikkien tulo on: " + str(a))
+a = ((x + y + z) / 3)
+print("Lukujen keskiarvo on: " + str(a))
