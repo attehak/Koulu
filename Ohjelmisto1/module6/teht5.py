@@ -1,10 +1,11 @@
 lista = []
 
 def karsia(lista):
+    listaa = []
     for i in lista:
-        if i % 2 != 0:
-            lista.remove(i)
-    return lista
+        if i % 2 == 0:
+            listaa.append(i)
+    return listaa
 
 while True:
     x = input("Anna luku: ")
@@ -14,4 +15,4 @@ while True:
 
 print(lista)
 tulos = karsia(lista)
-print(lista)
+print(tulos)
