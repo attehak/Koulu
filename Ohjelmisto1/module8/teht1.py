@@ -1,6 +1,5 @@
 import mysql.connector
 
-
 yhteys = mysql.connector.connect(
     host="127.0.0.1",
     port=3306,
@@ -9,8 +8,6 @@ yhteys = mysql.connector.connect(
     password="atte",
     autocommit=True
 )
-
-
 def hae_lentokentta(icao):
     sql = f"SELECT * FROM airport WHERE ident = '{icao}'"
     kursori = yhteys.cursor()
