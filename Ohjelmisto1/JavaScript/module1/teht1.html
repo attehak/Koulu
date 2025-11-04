@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <script>
+        'use strict';
+        console.log('This is text is printed to the console.');
+    </script>
+</body>
+</html>
