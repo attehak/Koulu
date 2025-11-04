@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Calc</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+	const k1 = Number(prompt('number 1. '));
+	const k2 = Number(prompt('number 2. '));
+	const k3 = Number(prompt('number 3. '));
+	let j1 = k1 + k2 + k3;
+	let j2 = k1 * k2 * k3;
+	let j3 = j1/3;
+	document.querySelector('#target').innerHTML = 'summa: ' + j1 + ' tulo: ' + j2 + ' Keskiarvo: ' + j3;
+</script>
+</body>
+</html>
