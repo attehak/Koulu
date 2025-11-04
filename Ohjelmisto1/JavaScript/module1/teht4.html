@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Harry</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+	function number(max) {
+	return Math.floor(Math.random() * max);
+	}
+	const name = prompt('Type your name.');
+	const num = number(4);
+	if (num == 0) {
+	document.querySelector('#target').innerHTML = name + ' You are Gryffindor';
+	} else if (num == 1) {
+	document.querySelector('#target').innerHTML = name + ' You are Slytherin';
+	} else if (num == 2) { 
+	document.querySelector('#target').innerHTML = name + ' You are Hufflepuffle';
+	} else if (num == 3) {
+	document.querySelector('#target').innerHTML = name + ' You are Ravenclaw';
+	}
+</script>
+</body>
+</html>
