@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Numbers</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+	let numbers = [];
+	let number = prompt('Anna luku (sama lopettaa)');
+	while (!numbers.includes(number)) {
+	numbers.push(number);
+	number = prompt('Anna luku (sama lopettaa)');
+	}
+	numbers.sort((a,b) => a-b);
+	console.log(numbers)
+</script>
+</body>
+</html>
