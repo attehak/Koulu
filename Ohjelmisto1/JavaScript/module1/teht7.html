@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Dice</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+	const number = prompt('Kui mont kertaa?');
+	let dice = 0
+	for (let i = 0; i <= number; i++) {
+	let num = Math.floor(Math.random() * 6)
+	dice = dice + num
+	}
+	console.log(dice)
+</script>
+</body>
+</html>
