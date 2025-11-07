@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Names</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+	let names = [];
+	const number = prompt('Kui mont?');
+
+	for (let i = 0; i < number; i++) {
+	names.push(prompt('Name?'));
+}
+	names.sort();
+
+	let list = '<ol>';
+	for (let name of names) {
+	list += `<li>${name}</li>`;
+}
+	list += '</ol>';
+	document.querySelector('#target').innerHTML = list;
+</script>
+</body>
+</html>
