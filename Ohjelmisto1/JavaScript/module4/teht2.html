@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+</head>
+<body>
+    <h1>Tehtävä 2</h1>
+    <form id ="television" >
+        <input name="query" type="text" placeholder="TVSHOW">
+        <input name ="submit" type="submit" value="Search">
+      </form>
+    <script>
+        'use strict';
+        const tvform = document.querySelector('#television')
+        tvform.addEventListener('submit', async (evt) => {
+            evt.preventDefault();
+            const value = tvform.query.value;
+            try {
+                const response = await fetch(`https://api.tvmaze.com/search/shows?q=${value}`);
+                const data = await response.json();
+                console.log(data);
+                if (data.length > 0) {
+                    console.log("Eka osuma:", data[0].show.name);
+                } else {
+                    console.log("Ei löydy mitää.");
+                }
+            } catch (err) {
+                console.log(err.message);
+            }
+        });
+    </script>
+</body>
+</html>
