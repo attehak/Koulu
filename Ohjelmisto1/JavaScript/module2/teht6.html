@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+</head>
+<body>
+    <h1>Dice till 6</h1>
+    <ul id="mlista"></ul>
+    <script>
+        'use strict';
+        let lista = []
+        let list = document.getElementById("mlista");
+        function roll() {
+            let rolli = Math.floor(Math.random()* 6) + 1
+            lista.push(rolli)
+            return rolli
+            }
+        let result = roll() 
+        while (result < 6){
+            result = roll()
+            if (result == 6){
+                for (let x= 0; x < lista.length; x++){
+                    let li = document.createElement('li')
+                    li.innerText = lista[x]
+                    list.appendChild(li)} 
+            }
+        }
+    </script>
+</body>
+</html>
